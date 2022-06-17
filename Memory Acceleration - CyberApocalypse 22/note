@@ -1,0 +1,14 @@
+a custom made hash function which
+totally didn't have any relation with some Chaotic Hash Function
+or some funky equations with AES sbox!
+
+this was really simple, if we dared to use z3!
+the left shift do cancel out, if we think about it~~
+putting the second loop as constraints in z3, did all the job! :)
+
+z3 solver!!
+https://theory.stanford.edu/~nikolaj/programmingz3.html
+https://littlemaninmyhead.wordpress.com/2015/09/28/so-you-want-to-learn-to-break-ciphers/
+
+do remember, z3 right shift is arithmetic and not logical!!!
+actually same is the case from python too!

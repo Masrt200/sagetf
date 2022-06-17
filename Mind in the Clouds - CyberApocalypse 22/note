@@ -1,0 +1,9 @@
+attack on ECDSA nonce
+middle bits of the nonce (k) was leaked
+research shows even a single bit of leaked nonce can help recover the private key!
+given enough samples...
+
+here we had only two but with more than 128 bits of the nonce!
+using Extended HNP and in turn LLL and all the lattice based techniques
+matrix reduction was done to obtain the private key!!!
+

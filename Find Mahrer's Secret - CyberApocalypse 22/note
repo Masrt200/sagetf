@@ -1,0 +1,4 @@
+Fluhrer, Mantin and Shamir attack on RC4/ARC4
+when resuing key with user controlled IV, PT!
+
+Used to recover the key!

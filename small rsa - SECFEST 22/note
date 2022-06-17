@@ -1,0 +1,6 @@
+rsa challenge
+with custom prime generation
+the primes generated were polynomials whose base was known to us
+using some bruteforce all the coefficeints of N were found
+N can then be written in normal polynomial form
+and easily factored!!!
