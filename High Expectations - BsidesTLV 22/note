@@ -1,0 +1,22 @@
+stats challenge
+for selecting the correct suit, the chances are 0.25
+for selecting the correct card, the chances are 1/13, or is it?
+
+def rand_range(rng):
+    return rng - (secrets.randbits(4) % rng)
+
+if rng = 13, we have a slight bias towards 11, 12, 13
+since [0-15] % 13, we get [0-2] twice
+
+so, if we pick [11-13] our chances are 2/16
+
+so overall chances of winnning, 1/4 * 2/16 = 0.03125
+
+we have 3000 rounds, so we win... 3000 * 0.03125 ~ 94 times
+and lose ~ 2906 times!!
+
+but since we get 60 points for winning, so overall score
+= (60 + 60 * 94 - 2906)
+= 2794 (for ideal case)
+
+which is way above 2000, that we wish to achieve

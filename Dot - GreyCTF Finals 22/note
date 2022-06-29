@@ -1,0 +1,10 @@
+Complex Numbers
+DoT Product
+
+
+We can solve this by using LLL, or a bit of brain
+the server accepts integers upto, 400 bits and hidden vector is composed of six 64 bits integers...
+so, we send powers of 2, 64 bits apart and get the flag!
+
+my v2, [2^398,2^334,2^270,2^206,2^142,2^78], and we can easily take out the bits of the hidden
+number from the result!

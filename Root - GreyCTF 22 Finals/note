@@ -1,0 +1,14 @@
+Polynomials
+Quadratic Formulas~~
+constant term of a Polynomial is the product of ALL its roots
+
+Polynomial Recovery!!
+
+so, yea... just send in 0 -> we get the constant term
+factor it, and luckily we have 4 factors
+send them and get the flag!!!
+
+This great writeup also mentions a method by which we can recover the ENTIRE polynomial
+by supplying a very large input
+
+https://github.com/jontay999/CTF-writeups/blob/master/GreyCTF%202022/Crypto/root.md
