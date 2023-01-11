@@ -1,0 +1,11 @@
+#rc4
+#bias towards zero
+#estimation
+
+this challenge didn't suffer from the previous error of low
+entropy
+
+except since the state size was only 64, the prng quickly ran
+towards generating zero with a extremely greater bias
+
+that resulted in its downfall! :(

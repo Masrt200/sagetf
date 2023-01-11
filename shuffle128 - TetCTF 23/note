@@ -1,0 +1,13 @@
+#entropy
+#python shuffle
+#rc4 #7 bits
+
+this was a really fun one. Hard to notice bug
+rc4 used here uses 128 bytes of state (0 - 127)
+what this does is guarantees, the msb to be 0
+
+the shuffle function, shuffles the flag bits and then a xor
+is done with the output of the prng. 
+
+If the msb of a byte is 1,
+    the flag bit must be one. And vice verse.

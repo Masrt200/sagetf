@@ -1,0 +1,17 @@
+affine transformation...
+the flag was this, CyberErudites{_NTRU_LLL_4tt4ck_}
+
+duh, it was NTRU Encryption
+
+https://en.wikipedia.org/wiki/NTRUEncrypt
+listed are a ton of attacks,
+including Lattice Reduction, Meet-in-the-middle, chosen-ciphertext
+
+I just implemented the worst one!
+Bruteforce
+It worked, since the params were very small!
+
+so, yea straightforward NTRU!!
+
+refs:
+https://github.com/0ops/ctfs-2020/blob/master/codegate-quals/Crypto/Polynomials/solve.sage

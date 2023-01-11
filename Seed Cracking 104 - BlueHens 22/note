@@ -1,0 +1,8 @@
+the stream ciphers are seeded with our states,
+then 10000 generations later, we are have them generate two seemingly random numbers
+z3 was used to recover the last states, and similarly, we can get back to viable first state!
+
+z3
+stream cipher
+xoshiro++ stream cipher
+recovering states

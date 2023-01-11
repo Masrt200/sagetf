@@ -1,0 +1,12 @@
+we needed to solve discrete logs under Matrix Groups
+
+diagonalize the matrix
+and then solve discrete_log using eigen_vectors
+
+unlike other cases, we didn't have a unity in the base G
+simply taking discrete_log of G[0][0], H[0][0] worked!!!
+
+paper -> http://theory.stanford.edu/~dfreeman/papers/discretelogs.pdf
+ctf chall -> https://ctftime.org/writeup/8676
+
+https://rkm0959.tistory.com/206 (Neo Classical Key Exchange)
