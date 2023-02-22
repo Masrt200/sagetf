@@ -1,0 +1,29 @@
+given was a 512 bytes file.
+
+❯ file oldschool
+old.exe: DOS/MBR boot sector
+
+these types of files are actually code written in old-ass windows x86-32 assembly
+
+we can decompile using
+https://wade.be/w32dasm/
+or 
+good-ol' IDA-Pro (run IDA-32bit and disassemble in 16-bit mode [not 32-bit]) 
+
+can be emulated using,
+dosbox
+or 
+qemu
+
+reversing involves,
+some relations on our input
+z3 op!!
+
+flag: ctf{w00TMbrR}
+
+
+references:
+https://teamrocketist.github.io/2018/10/11/Reverse-InCTF-2018-load3r/
+https://jctf.team/BSidesTLV-2019/DoSaTTaCK/
+https://github.com/tothi/ctfs/tree/master/seccon-quals-ctf-2016/randomware
+

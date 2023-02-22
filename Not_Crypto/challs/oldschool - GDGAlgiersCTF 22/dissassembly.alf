@@ -1,0 +1,222 @@
+ansfer\W32DASM\old.exe
+= 00000200
+= 00000000
+agebase = 00000000h
+0 Offset: 00000000 Size: 00000200 Flags: 00000000
+(decimal)
+DETAILS +++++++++++++++
+IONS ++++++++++++++++++
+0 (decimal)
+LISTING ++++++++++++++++++
+Code in Object BinaryCode **************
+Code in Segment: 1 **************
+jmp 0003
+nop
+or (C)onditional Jump at Address:
+cli
+xor ax, ax
+mov ds, ax
+mov es, ax
+mov fs, ax
+mov gs, ax
+mov ah, 00
+mov di, 7D80
+mov cx, 0008
+sub bl, 01
+xor ah, ah
+int 16
+stosb
+mov ah, 0E
+int 10
+loop 0016
+xor cx, cx
+mov si, 7D80
+or (C)onditional Jump at Address:
+cmp cl, 04
+je 00F0
+mov di, cx
+shl di, 01
+add di, si
+mov ax, [di]
+mov dx, [si+04]
+mov di, [si+06]
+cmp cl, 00
+jne 0048
+mov bx, [si+02]
+jmp 005E
+or (C)onditional Jump at Address:
+mov bx, [si]
+cmp cl, 01
+jne 0051
+jmp 005E
+or (C)onditional Jump at Address:
+mov dx, [si+02]
+cmp cl, 02
+jne 005B
+jmp 005E
+or (C)onditional Jump at Address:
+mov di, [si+04]
+or (C)onditional Jump at Addresses:
+01.0059(U)
+rol ax, 08
+rol bx, 08
+rol dx, 08
+rol di, 08
+push ax
+and ax, 0F0F
+cmp ax, 0D02
+je 00BF
+cmp ax, 0700
+je 008C
+mov ax, word ptr ss:[esp]
+and ax, 00FF
+cmp ax, 0054
+je 00A4
+and ax, 000F
+cmp al, 02
+je 00D0
+or (C)onditional Jump at Address:
+xor bx, dx
+xor bh, 0F
+and bx, FF00
+and di, FF00
+cmp bx, di
+jne 00E5
+cmp cl, 00
+jne 00E5
+jmp 00EB
+or (C)onditional Jump at Address:
+xor bx, dx
+rol bx, 01
+xor bx, 00F0
+and bx, F0F0
+and di, F0F0
+cmp bx, di
+jne 00E5
+cmp cl, 01
+jne 00E5
+jmp 00EB
+or (C)onditional Jump at Address:
+xor bx, dx
+xor bx, 3536
+cmp bx, di
+jne 00E5
+cmp cl, 02
+jne 00E5
+jmp 00EB
+or (C)onditional Jump at Address:
+xor bx, dx
+and bx, F0F0
+and di, F0F0
+cmp bx, di
+jne 00E5
+cmp cl, 03
+jne 00E5
+jmp 00EB
+or (C)onditional Jump at Addresses:
+01.00B6(C), :0001.00BB(C), :0001.00C7(C), 
+01.00E1(C)
+mov word ptr [7D88], 0000
+or (C)onditional Jump at Addresses:
+01.00CE(U), :0001.00E3(U)
+pop ax
+inc cx
+jmp 0029
+or (C)onditional Jump at Address:
+mov ax, word ptr [7D88]
+test ax, ax
+jne 010D
+mov si, 7D66
+mov ah, 0E
+or (C)onditional Jump at Address:
+mov al , [si]
+xor al, 77
+test al , al 
+je 0109
+int 10
+inc si
+jmp 00FC
+or (C)onditional Jump at Address:
+xor ax, ax
+jmp ax
+or (C)onditional Jump at Address:
+mov si, 7D23
+mov ah, 0E
+or (C)onditional Jump at Address:
+mov al , [si]
+xor al, 77
+test al , al 
+je 011F
+int 10
+inc si
+jmp 0112
+or (C)onditional Jump at Address:
+xor ax, ax
+jmp ax
+jpe 01A2
+xor al, 18
+add ax, 1205
+adc al, 03
+push di
+dec bp
+xor dx, [bx+56]
+push di
+and bx, [bx]
+adc dl, [bx+11]
+sbb dx, [5710]
+push ds
+add al, 57
+adc al, 03
+adc [si], cx
+pop cx
+pop cx
+pop cx
+or bl , [bp+di+57]
+add ax, 0712
+sbb dx, [1214]
+push di
+pop cx
+pop cx
+pop cx
+push di
+add [1F03], bl 
+push di
+push cs
+sbb [bp+si], al 
+add ax, 1E57
+sbb [bx], ax
+add al , [bp+di]
+jpe 01E2
+ja 01E1
+jge 0189
+add ax, 1918
+adc [bx+4D], dl
+push ax
+pop di
+push di
+push si
+push di
+and ax, [di]
+push cs
+push di
+push ss
+adc [191E], dl
+jpe 01FC
+ja 0181
+or (C)onditional Jump at Address:
+BYTE  7 DUP(0)
+add [bx+si], ax
+BYTE 10 DUP(0)
+BYTE 10 DUP(0)
+BYTE 10 DUP(0)
+BYTE 10 DUP(0)
+BYTE 10 DUP(0)
+BYTE 10 DUP(0)
+BYTE 10 DUP(0)
+BYTE 10 DUP(0)
+BYTE 10 DUP(0)
+BYTE 10 DUP(0)
+BYTE 10 DUP(0)
+BYTE  6 DUP(0)
+push bp
+stosb

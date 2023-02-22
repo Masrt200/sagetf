@@ -1,0 +1,14 @@
+paas-v2:
+in CPython, theres 3 builtin functions (license, credits, copyright) that just print some text
+but they're actually all instances of _sitebuiltins.Printer (https://github.com/python/cpython/blob/3.10/Lib/_sitebuiltins.py)
+and the printed text comes from files
+so you can just overwrite the "__filenames" attribute to change what file gets read when you call license()
+the "_Printer" part at the beginning is just to deal with name-mangling on attributes prefixed with double underscores
+
+
+solve::
+> setattr(license, input(), list((input(), )))
+_Printer__filenames
+flag
+> license()
+flag{i_solved_it}

